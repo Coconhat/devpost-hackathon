@@ -61,6 +61,12 @@ const formSteps = [
         type: "number",
         placeholder: "Enter your weight",
       },
+      {
+        id: "bloodPressure",
+        label: "Blood Pressure",
+        type: "number",
+        placeholder: "Enter your blood pressure",
+      },
     ],
   },
   {
@@ -126,9 +132,19 @@ const formSteps = [
         label: "Alcohol Consumption",
         type: "select",
         options: [
-          { value: "sedentary", label: "sedentary" },
-          { value: "moderate", label: "moderate" },
-          { value: "active", label: "active" },
+          { value: "none", label: "none" },
+          { value: "occasional", label: "occasional" },
+          { value: "regular", label: "regular" },
+        ],
+      },
+      {
+        id: "dietAndNutrition",
+        label: "frequency of Sugary/Processed Foods",
+        type: "select",
+        options: [
+          { value: "none", label: "none" },
+          { value: "occasional", label: "occasional" },
+          { value: "regular", label: "regular" },
         ],
       },
     ],
@@ -153,6 +169,18 @@ const formSteps = [
       {
         id: "triglycerideLevels",
         label: "Triglyceride Levels",
+        type: "number",
+        placeholder: "Enter number",
+      },
+      {
+        id: "HDLCholestero",
+        label: "HDL cholestero",
+        type: "number",
+        placeholder: "Enter number",
+      },
+      {
+        id: "LDLCholesterol",
+        label: "LDL cholesterol",
         type: "number",
         placeholder: "Enter number",
       },
@@ -191,8 +219,35 @@ const formSteps = [
         ],
       },
       {
+        id: "slowHealing",
+        label: "Slow-healing wounds",
+        type: "select",
+        options: [
+          { value: "yes", label: "Yes" },
+          { value: "no", label: "No" },
+        ],
+      },
+      {
         id: "fatigue",
         label: "Fatigue",
+        type: "select",
+        options: [
+          { value: "yes", label: "Yes" },
+          { value: "no", label: "No" },
+        ],
+      },
+      {
+        id: "tinglingOrNumbnessInHandsOrFeet",
+        label: "Tingling or numbness in hands/feet",
+        type: "select",
+        options: [
+          { value: "yes", label: "Yes" },
+          { value: "no", label: "No" },
+        ],
+      },
+      {
+        id: "unexplainedWeightLoss",
+        label: "Unexplained weight loss",
         type: "select",
         options: [
           { value: "yes", label: "Yes" },
