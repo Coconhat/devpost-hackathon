@@ -19,6 +19,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Progress } from "./ui/progress";
 
 const formSteps = [
   {
@@ -269,6 +270,7 @@ export function DemographicForm() {
   const [formData, setFormData] = useState<Record<string, string | number>>({});
 
   const currentStepData = formSteps[step];
+  const progressPercentage = (step / formSteps.length) * 100;
 
   const handleNext = () => {
     if (step < formSteps.length - 1) {
@@ -287,6 +289,7 @@ export function DemographicForm() {
   };
   return (
     <Card className="w-[350px]">
+      <Progress value={progressPercentage} />
       <CardHeader>
         <CardTitle>{currentStepData.title}</CardTitle>
         <CardDescription>{currentStepData.description}</CardDescription>

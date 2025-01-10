@@ -8,10 +8,6 @@ export default function Home() {
       <Mainheader />
 
       <div className="flex justify-center mt-7">
-        <Progress value={33} />
-      </div>
-
-      <div className="flex justify-center mt-7">
         <DemographicForm />
       </div>
     </div>
