@@ -1,4 +1,3 @@
-import { Progress } from "@/components/ui/progress";
 import Mainheader from "../components/Mainheader";
 import { DemographicForm } from "@/components/DemographicForm";
 
@@ -7,7 +6,7 @@ export default function Home() {
     <div>
       <Mainheader />
 
-      <div className="flex justify-center mt-7">
+      <div className="flex justify-center">
         <DemographicForm />
       </div>
     </div>
