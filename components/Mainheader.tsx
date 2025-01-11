@@ -15,7 +15,7 @@ export default function MainHeader() {
           </div>
 
           {/* Subtitle */}
-          <h2 className="text-2xl text-gray-700 font-medium">
+          <h2 className="text-2xl text-gray-700 font-medium mx-auto text-center">
             Your Personal Diabetes Prediction Assistant
           </h2>
 
