@@ -28,6 +28,12 @@ const formSteps = [
     description: "Enter your demographic here",
     fields: [
       {
+        id: "name",
+        label: "Name",
+        type: "text",
+        placeholder: "Name",
+      },
+      {
         id: "age",
         label: "Age",
         type: "number",
