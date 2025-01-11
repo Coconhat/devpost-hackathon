@@ -315,7 +315,7 @@ export function DemographicForm() {
                       <SelectValue placeholder={`Select ${field.label}`} />
                     </SelectTrigger>
                     <SelectContent position="popper">
-                      {field.options.map((option) => (
+                      {field.options?.map((option) => (
                         <SelectItem key={option.value} value={option.value}>
                           {option.label}
                         </SelectItem>
