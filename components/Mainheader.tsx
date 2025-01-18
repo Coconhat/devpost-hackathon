@@ -24,8 +24,8 @@ export default function MainHeader() {
 
           {/* Description */}
           <p className="text-lg text-gray-600 text-center max-w-2xl leading-relaxed">
-            Powered by advanced AI and trained on the comprehensive Pima Indians
-            Diabetes Dataset, Diabeat combines{" "}
+            Powered by advanced AI and trained on the comprehensive Mendeley
+            2020 Diabetes Dataset, Diabeat combines{" "}
             <span className="text-blue-600 font-medium">
               FHIR-first technology
             </span>{" "}
