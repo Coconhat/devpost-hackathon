@@ -33,12 +33,6 @@ const formSteps = [
     description: "Enter your demographic here",
     fields: [
       {
-        id: "name",
-        label: "Name",
-        type: "text",
-        placeholder: "Name",
-      },
-      {
         id: "age",
         label: "Age",
         type: "number",
@@ -62,17 +56,12 @@ const formSteps = [
     description: "Enter your health metric here",
     fields: [
       {
-        id: "height",
-        label: "Height (cm)",
+        id: "bmi",
+        label: "BMI",
         type: "number",
-        placeholder: "Enter your height",
+        placeholder: "Enter your BMI",
       },
-      {
-        id: "weight",
-        label: "Weight (kg)",
-        type: "number",
-        placeholder: "Enter your weight",
-      },
+
       {
         id: "bloodPressure",
         label: "Blood Pressure",
@@ -167,8 +156,20 @@ const formSteps = [
     description: "Enter your Clinical Measurements",
     fields: [
       {
-        id: "fastingBloodGlucoseLevel",
-        label: "Fasting Blood Glucose Level",
+        id: "urea",
+        label: "Urea",
+        type: "number",
+        placeholder: "Enter number",
+      },
+      {
+        id: "cr",
+        label: "Cr level (Chromium level)",
+        type: "number",
+        placeholder: "Enter number",
+      },
+      {
+        id: "cholesterol",
+        label: "Cholesterol level",
         type: "number",
         placeholder: "Enter number",
       },
